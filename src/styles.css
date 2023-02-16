@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --gutter: 30px;
+  --side-small: 26;
+  --side-big: 36;
+  --depth: 4000px;
+  --transaction: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+body {
+  background-color: black;
+  color: white;
+  font-size: calc(var(--index) * 0.8);
+  line-height: 1.75;
+  height: var(--depth);
+  font-weight: 300;
+}
